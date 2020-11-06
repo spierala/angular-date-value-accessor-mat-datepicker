@@ -9,20 +9,15 @@
 <!-- #enddocregion toggle -->
 </mat-form-field>
 
-
 <form>
   <p><strong>Html 5 Date Picker with useValueAsDate</strong></p>
   <input name="date" type="date" [(ngModel)]="date" useValueAsDate>
-</form>  
+</form>
+
+<form>
+  <p><strong>Html 5 Date Picker with useValueAsDateLocal</strong></p>
+  <input name="date" type="date" [(ngModel)]="date" useValueAsDateLocal>
+</form>
 
 <p><strong>Angular Date Pipe</strong></p>
 <p>{{date | date:'dd-MM-yyyy HH:mm'}}</p>
-
-<form>
-  <p><strong>Html 5 Date Picker with Date as String</strong></p>
-  <input name="date" type="date" [(ngModel)]='dateAsString'>
-</form>  
-
-<p><strong>Date as string</strong></p>
-<p>{{dateAsString}}</p>
-
