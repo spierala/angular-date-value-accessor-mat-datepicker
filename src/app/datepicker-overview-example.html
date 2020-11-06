@@ -1,0 +1,28 @@
+
+<p><strong>Material Date Picker</strong></p>
+<mat-form-field appearance="fill">
+  <mat-label>Material Date Picker</mat-label>
+<!-- #docregion toggle -->
+  <input matInput [matDatepicker]="picker" [(ngModel)]='date'>
+  <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+  <mat-datepicker #picker></mat-datepicker>
+<!-- #enddocregion toggle -->
+</mat-form-field>
+
+
+<form>
+  <p><strong>Html 5 Date Picker with useValueAsDate</strong></p>
+  <input name="date" type="date" [(ngModel)]="date" useValueAsDate>
+</form>  
+
+<p><strong>Angular Date Pipe</strong></p>
+<p>{{date | date:'dd-MM-yyyy HH:mm'}}</p>
+
+<form>
+  <p><strong>Html 5 Date Picker with Date as String</strong></p>
+  <input name="date" type="date" [(ngModel)]='dateAsString'>
+</form>  
+
+<p><strong>Date as string</strong></p>
+<p>{{dateAsString}}</p>
+
