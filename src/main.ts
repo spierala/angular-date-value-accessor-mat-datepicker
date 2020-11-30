@@ -13,6 +13,7 @@ import {MAT_FORM_FIELD_DEFAULT_OPTIONS} from '@angular/material/form-field';
 import {DatepickerOverviewExample} from './app/datepicker-overview-example';
 import { DateValueAccessorModule } from 'angular-date-value-accessor';
 import { DateLocalValueAccessorModule } from './app/date-local-value-accessor/date-local-value-accessor.module';
+import {CalendarModule} from 'primeng/calendar';
 
 // Default MatFormField appearance to 'fill' as that is the new recommended approach and the
 // `legacy` and `standard` appearances are scheduled for deprecation in version 10.
@@ -27,7 +28,8 @@ import { DateLocalValueAccessorModule } from './app/date-local-value-accessor/da
     MatNativeDateModule,
     ReactiveFormsModule,
     DateValueAccessorModule,
-    DateLocalValueAccessorModule
+    DateLocalValueAccessorModule,
+    CalendarModule
   ],
   entryComponents: [DatepickerOverviewExample],
   declarations: [DatepickerOverviewExample],

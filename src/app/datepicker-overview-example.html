@@ -1,5 +1,5 @@
 
-<p><strong>Material Date Picker</strong></p>
+<p><strong>Angular Material Date Picker</strong></p>
 <mat-form-field appearance="fill">
   <mat-label>Material Date Picker</mat-label>
 <!-- #docregion toggle -->
@@ -9,15 +9,14 @@
 <!-- #enddocregion toggle -->
 </mat-form-field>
 
-<form>
-  <p><strong>Html 5 Date Picker with useValueAsDate</strong></p>
-  <input name="date" type="date" [(ngModel)]="date" useValueAsDate>
-</form>
+<p><strong>Prime NG Date Picker</strong></p>
+<p-calendar inputId="basic" [(ngModel)]="date" dateFormat="dd-mm-yy"></p-calendar>
 
-<form>
-  <p><strong>Html 5 Date Picker with useValueAsDateLocal</strong></p>
-  <input name="date" type="date" [(ngModel)]="date" useValueAsDateLocal>
-</form>
+<p><strong>Html 5 Date Picker with useValueAsDate</strong></p>
+<input type="date" [(ngModel)]="date" useValueAsDate>
+
+<p><strong>Html 5 Date Picker with useValueAsDateLocal</strong></p>
+<input  type="date" [(ngModel)]="date" useValueAsDateLocal>
 
 <p><strong>Angular Date Pipe</strong></p>
 <p>{{date | date:'dd-MM-yyyy HH:mm'}}</p>
